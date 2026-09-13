@@ -32,7 +32,7 @@ A modern movie discovery app inspired by [IMDb](https://imdb.com), built with **
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/pramay88/TheMoviesBase.git
+git clone https://github.com/Ameya-Tatkundwar/Movies-DB.git
 cd TheMoviesBase
 ```
 
@@ -46,6 +46,12 @@ Create a `.env` file in the project root for Vite:
 VITE_TMDB_API_KEY=your_tmdb_api_key_here
 PORT=5000
 ```
+
+### start
+```bash
+npm run dev
+```
+
 
 Restart the Vite development server after creating or changing `.env`, because environment
 variables are loaded when the server starts.
