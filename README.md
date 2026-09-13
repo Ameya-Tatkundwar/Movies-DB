@@ -41,8 +41,11 @@ cd TheMoviesBase
 npm install
 ```
 ### 3️⃣ Setup Environment Variables  
-Create a .env file for your backend:
+Create a `.env` file in the project root for Vite:
 ```bash
-TMDB_API_KEY=your_tmdb_api_key_here
+VITE_TMDB_API_KEY=your_tmdb_api_key_here
 PORT=5000
 ```
+
+Restart the Vite development server after creating or changing `.env`, because environment
+variables are loaded when the server starts.

@@ -23,6 +23,11 @@ function App() {
     // Fetching the Trending Movie Banner
     useEffect(() => {
     const fetchBannerMovie = async () => {
+      if (!API_KEY) {
+        console.error('TMDB API key is missing. Set VITE_TMDB_API_KEY in .env and restart Vite.');
+        return;
+      }
+
       try {
         const res = await axios.get(`https://api.themoviedb.org/3/trending/all/day?language=en-US&api_key=${API_KEY}`);
         setbannerMovie(res.data.results[0]);
